@@ -1,0 +1,21 @@
+{
+    "name": "ari-salt/member-middleware",
+    "description": "A Laravel/Lumen middleware to get the app user ID based on the CIAM ID.",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {"AriSALT\\MemberMiddleware\\": "src/MemberMiddleware/"}
+    },
+    "require": {
+        "php": "^7.2",
+        "laravel/lumen-framework": "^6.0",
+        "ari-salt/logger": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "ari-salt",
+            "email": "aristo.rinjuang@salt.co.id"
+        }
+    ],
+    "minimum-stability": "dev"
+}
