@@ -14,7 +14,10 @@ class MySQLMemberRepository implements MemberRepository
 	): string {
 		$result = DB::table($table)
 			->select($fieldMemberID)
-			->where($fieldForgerockID, $forgerockID)
+			->where([
+				$fieldForgerockID => $forgerockID,
+				'o_published' => 1
+			])
 			->limit(1)
 			->first($fieldMemberID);
 
